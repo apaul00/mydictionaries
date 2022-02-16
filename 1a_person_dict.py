@@ -14,10 +14,21 @@ person["pets"] = {"dog": "Fido", "cat": "Sox"}
 
 # print child - "Betty"
 
+childName = person['children'][1]
+
+print(childName)
+
 # print the pet name of the cat
 
+cat = person['pets']['cat']
+
+print(cat)
 
 # use a for loop to print out all the children
 
+for child in person['children']:
+    print(child)
 
 # use a for loop to print out the type of pet and name of pet
+for pet in person['pets']:
+    print(person['pets'][pet])
